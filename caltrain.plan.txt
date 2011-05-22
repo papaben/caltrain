@@ -1,0 +1,14 @@
+Script to call twitter and get results.
+--> perhaps do this in javascript so I don't have to parse xml?
+--> or just use a JSON library in ruby?
+
+Based on date of latest updates, 
+  search for "delay" etc.
+
+Output of script is the tweet if any applicable, 
+...otherwise, empty
+
+Write apple script to have computer speak text result of script
+
+Crontab to run at 6pm
+
