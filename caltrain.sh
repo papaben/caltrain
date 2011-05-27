@@ -14,7 +14,9 @@
 
 	# Make sure proper gems are loaded
 	set tweets to do shell script "source ~/.rvm/scripts/rvm && ruby ~/Scripts/caltrain.rb"
-	display alert tweets
+	if tweets is not "" then
+		display alert tweets
+	end if
 
 	# Reset volume levels
 	set volume output volume origVolume
