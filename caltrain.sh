@@ -13,7 +13,7 @@
 	display alert "Time to catch the caltrain"
 
 	# Make sure proper gems are loaded
-	set tweets to do shell script "source ~/.rvm/scripts/rvm && ruby ~/Scripts/caltrain.rb"
+	set tweets to do shell script "source ~/.rvm/scripts/rvm && ruby ~/Scripts/CalTrain/caltrain.rb"
 	if tweets is not "" then
 		display alert tweets
 	end if
