@@ -7,7 +7,7 @@
 
 	# Crank the volume up
 	set origVolume to output volume of (get volume settings)
-	set volume output volume 100
+	set volume output volume 70
 
 	say "[[rate 160]]Time to catch the cal train"
 	display alert "Time to catch the caltrain"
