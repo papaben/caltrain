@@ -10,12 +10,13 @@
 	set volume output volume 70
 
 	say "[[rate 160]]Time to catch the cal train"
-	display alert "Time to catch the caltrain"
 
 	# Make sure proper gems are loaded
-	set tweets to do shell script "source ~/.rvm/scripts/rvm && ruby ~/Scripts/CalTrain/caltrain.rb"
+	set tweets to do shell script "ruby ~/Code/scripts/CalTrain/caltrain.rb"
 	if tweets is not "" then
 		display alert tweets
+	else
+		display alert "Time to catch the caltrain"
 	end if
 
 	# Reset volume levels

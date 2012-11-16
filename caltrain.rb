@@ -61,6 +61,7 @@ rescue => e
   exit
 end
 
-puts tweets.shift if tweets.size > 0
-puts "#{tweets.size} more tweets" if tweets.size > 0
+puts tweets * "\n"
+# puts tweets.shift if tweets.size > 0
+# puts "#{tweets.size} more tweets" if tweets.size > 0
 
