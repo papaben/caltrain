@@ -1,7 +1,6 @@
 #!/bin/bash
 
 /usr/bin/osascript <<-EOF
-
     tell application "Finder"
         activate
 
@@ -12,7 +11,7 @@
 	say "[[rate 160]]Time to catch the cal train"
 
 	# Make sure proper gems are loaded
-	set tweets to do shell script "ruby ~/Code/scripts/CalTrain/caltrain.rb"
+	set tweets to do shell script "~/Code/scripts/CalTrain/rbenv-caltrain.sh"
 	if tweets is not "" then
 		display alert tweets
 	else
