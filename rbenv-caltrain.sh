@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-# Run with rbenv ruby
-~/.rbenv/shims/ruby ~/Code/scripts/CalTrain/caltrain.rb
+~/.rbenv/versions/1.9.2-p320/bin/ruby ~/Code/scripts/CalTrain/caltrain.rb
 
